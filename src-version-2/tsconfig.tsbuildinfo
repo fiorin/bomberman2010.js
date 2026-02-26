@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/core/gameEngine.ts","./src/core/random.ts","./src/core/setup.ts","./src/core/types.ts","./src/render/canvasRenderer.ts","./src/test/gameEngine.test.ts","./vite.config.ts"],"version":"5.9.3"}

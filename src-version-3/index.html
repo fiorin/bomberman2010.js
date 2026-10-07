@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bomberman 2010 — Versão 3</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="television">
+      <div id="menu">
+        <p class="menu-titulo">Jogadores humanos</p>
+        <div id="jogadores">
+          <button data-humans="1">1</button>
+          <button data-humans="2">2</button>
+          <button data-humans="3">3</button>
+          <button data-humans="4">4</button>
+        </div>
+        <p class="menu-titulo">Dificuldade da IA</p>
+        <div id="dificuldade">
+          <button data-dificuldade="easy">Fácil</button>
+          <button data-dificuldade="normal" class="ativo">Normal</button>
+          <button data-dificuldade="hard">Difícil</button>
+        </div>
+        <p id="menu-dica">Sempre 4 jogadores. Os demais são controlados pela IA.</p>
+      </div>
+      <div id="info"></div>
+      <div id="resultado"></div>
+      <div id="relogio"></div>
+      <canvas width="330" height="330" id="tabuleiro" style="border: 1px solid #333"></canvas>
+      <div id="fim" hidden>
+        <button id="de-novo">Jogar de novo</button>
+        <button id="trocar">Trocar jogadores</button>
+      </div>
+    </div>
+    <div id="controle">
+      <a href="/resource/controles.png" target="_blank" rel="noreferrer">
+        <img src="/resource/controle.png" alt="controles" />
+      </a>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
